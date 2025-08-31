@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>리더십 스타일 유형별 강점</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .styles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .style-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .style-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+
+        .style-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+        }
+
+        .style-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .style-image {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 15px;
+            border: 3px solid #667eea;
+        }
+
+        .style-info h3 {
+            color: #667eea;
+            font-size: 1.3rem;
+            margin-bottom: 5px;
+        }
+
+        .style-code {
+            background: #f8f9fa;
+            color: #6c757d;
+            padding: 3px 8px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        .style-brand {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 8px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            margin-top: 5px;
+            display: inline-block;
+        }
+
+        .style-description {
+            color: #555;
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+
+        .style-strengths {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+
+        .style-strengths h4 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+
+        .style-strengths ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .style-strengths li {
+            padding: 5px 0;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .style-strengths li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #28a745;
+            font-weight: bold;
+        }
+
+        .footer {
+            text-align: center;
+            color: white;
+            margin-top: 40px;
+            padding: 20px;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .styles-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .style-card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>리더십 스타일 유형별 강점</h1>
+            <p>12가지 리더십 스타일의 특성과 브랜드화 키워드</p>
+        </div>
+
+        <div class="styles-grid">
+            <!-- EI 스타일 -->
+            <div class="style-card">
+                <div class="style-header">
+                    <img src="png/1.png" alt="EI 스타일" class="style-image">
+                    <div class="style-info">
+                        <h3>임팩트 드라이버</h3>
+                        <div class="style-code">EI 스타일</div>
+                        <div class="style-brand">Impact Driver</div>
+                    </div>
+                </div>
+                <div class="style-description">
+                    실행력을 기반으로 어려운 상황에서도 끈기 있게 목표를 달성합니다. 동시에 영향력을 발휘하여 구성원들에게 동기를 부여하고, 조직 전체가 더 높은 목표에 도전하도록 이끕니다.
+                </div>
+                <div class="style-strengths">
+                    <h4>주요 강점</h4>
+                    <ul>
+                        <li>명확한 결단과 추진력</li>
+                        <li>성과와 혁신 동시 추구</li>
+                        <li>위기 상황에서의 안정성</li>
+                        <li>조직 동기부여 능력</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- ER 스타일 -->
+            <div class="style-card">
+                <div class="style-header">
+                    <img src="png/2.png" alt="ER 스타일" class="style-image">
+                    <div class="style-info">
+                        <h3>트러스트 메이커</h3>
+                        <div class="style-code">ER 스타일</div>
+                        <div class="style-brand">Trust Maker</div>
+                    </div>
+                </div>
+                <div class="style-description">
+                    원칙과 기준에 충실하게 업무를 수행하면서 협력적인 분위기를 조성하여 조직의 신뢰를 얻습니다. 구성원의 성장을 존중하고 지원하면서도, 엄정한 평가를 통해 성과와 보상을 공정하게 관리합니다.
+                </div>
+                <div class="style-strengths">
+                    <h4>주요 강점</h4>
+                    <ul>
+                        <li>원칙적 실행과 따뜻한 관계</li>
+                        <li>안정적인 조직 운영</li>
+                        <li>구성원 만족도 향상</li>
+                        <li>공정한 성과 관리</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- ES 스타일 -->
+            <div class="style-card">
+                <div class="style-header">
+                    <img src="png/3.png" alt="ES 스타일" class="style-image">
+                    <div class="style-info">
+                        <h3>어댑티브 도어</h3>
+                        <div class="style-code">ES 스타일</div>
+                        <div class="style-brand">Adaptive Doer</div>
+                    </div>
+                </div>
+                <div class="style-description">
+                    강한 추진력과 결단력을 바탕으로 변화하는 환경 속에서 전략적 방향을 명확히 제시합니다. 빠른 실행을 통해 트렌드를 실제 성과로 전환하고, 미래 지향적인 목표 달성을 동시에 이룹니다.
+                </div>
+                <div class="style-strengths">
+                    <h4>주요 강점</h4>
+                    <ul>
+                        <li>빠른 실행과 전략적 통찰</li>
+                        <li>변화 속에서의 성과 창출</li>
+                        <li>단기 성과와 장기 발전 균형</li>
+                        <li>불확실성 대응 능력</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- IE 스타일 -->
+            <div class="style-card">
+                <div class="style-header">
+                    <img src="png/4.png" alt="IE 스타일" class="style-image">
+                    <div class="style-info">
+                        <h3>퍼시스턴트 퍼서더</h3>
+                        <div class="style-code">IE 스타일</div>
+                        <div class="style-brand">Persistent Persuader</div>
+                    </div>
+                </div>
+                <div class="style-description">
+                    영향력을 통해 타인을 설득하고 조직의 동참을 이끌어내며, 실행력을 바탕으로 약속한 목표를 끝까지 달성합니다. 설득력과 추진력을 동시에 발휘하여 조직이 활력을 잃지 않고 나아가도록 돕습니다.
+                </div>
+                <div class="style-strengths">
+                    <h4>주요 강점</h4>
+                    <ul>
+                        <li>설득력과 추진력 결합</li>
+                        <li>조직 결속력 강화</li>
+                        <li>명확한 방향성 제시</li>
+                        <li>높은 성취 달성</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- IR 스타일 -->
+            <div class="style-card">
+                <div class="style-header">
+                    <img src="png/5.png" alt="IR 스타일" class="style-image">
+                    <div class="style-info">
+                        <h3>시너지 빌더</h3>
+                        <div class="style-code">IR 스타일</div>
+                        <div class="style-brand">Synergy Builder</div>
+                    </div>
+                </div>
+                <div class="style-description">
+                    원활한 커뮤니케이션으로 소통의 장을 마련하고, 협업을 통해 집단적 시너지를 창출합니다. 동시에 인재 확보와 동기부여를 통해 구성원이 지속적으로 성장할 수 있도록 이끕니다.
+                </div>
+                <div class="style-strengths">
+                    <h4>주요 강점</h4>
+                    <ul>
+                        <li>원활한 커뮤니케이션</li>
+                        <li>집단적 시너지 창출</li>
+                        <li>긍정적 조직 문화 조성</li>
+                        <li>자발적 헌신 유도</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- IS 스타일 -->
+            <div class="style-card">
+                <div class="style-header">
+                    <img src="png/6.png" alt="IS 스타일" class="style-image">
+                    <div class="style-info">
+                        <h3>체인지 캐처</h3>
+                        <div class="style-code">IS 스타일</div>
+                        <div class="style-brand">Change Catcher</div>
+                    </div>
+                </div>
+                <div class="style-description">
+                    새로운 기회와 변화를 민감하게 포착하고 이를 전략적 방향으로 연결합니다. 영향력을 발휘하여 구성원들이 변화의 필요성을 이해하고 적극적으로 참여하도록 돕습니다.
+                </div>
+                <div class="style-strengths">
+                    <h4>주요 강점</h4>
+                    <ul>
+                        <li>변화 민감성과 포착력</li>
+                        <li>혁신 주도 능력</li>
+                        <li>미래 지향적 통찰</li>
+                        <li>빠른 환경 적응</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- RE 스타일 -->
+            <div class="style-card">
+                <div class="style-header">
+                    <img src="png/7.png" alt="RE 스타일" class="style-image">
+                    <div class="style-info">
+                        <h3>팀플레이 메이커</h3>
+                        <div class="style-code">RE 스타일</div>
+                        <div class="style-brand">Teamplay Maker</div>
+                    </div>
+                </div>
+                <div class="style-description">
+                    구성원과의 신뢰를 바탕으로 협력적 관계를 형성하면서도, 강한 실행력을 통해 성과를 창출합니다. 협업과 추진력을 동시에 발휘하여 과제를 효과적으로 완수합니다.
+                </div>
+                <div class="style-strengths">
+                    <h4>주요 강점</h4>
+                    <ul>
+                        <li>신뢰 기반 협력 관계</li>
+                        <li>안정적인 성과 창출</li>
+                        <li>팀워크와 효율성 균형</li>
+                        <li>장기적 충성도 확보</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- RI 스타일 -->
+            <div class="style-card">
+                <div class="style-header">
+                    <img src="png/8.png" alt="RI 스타일" class="style-image">
+                    <div class="style-info">
+                        <h3>하모니 리더</h3>
+                        <div class="style-code">RI 스타일</div>
+                        <div class="style-brand">Harmony Leader</div>
+                    </div>
+                </div>
+                <div class="style-description">
+                    타인을 존중하고 관계를 기반으로 신뢰를 구축하면서, 영향력을 발휘하여 변화를 추진합니다. 협력과 설득을 결합해 긍정적이고 에너지가 넘치는 조직 분위기를 만들어갑니다.
+                </div>
+                <div class="style-strengths">
+                    <h4>주요 강점</h4>
+                    <ul>
+                        <li>관계 기반 신뢰 구축</li>
+                        <li>협력적 자율 문화</li>
+                        <li>긍정적 에너지 조성</li>
+                        <li>자발적 참여 유도</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- RS 스타일 -->
+            <div class="style-card">
+                <div class="style-header">
+                    <img src="png/9.png" alt="RS 스타일" class="style-image">
+                    <div class="style-info">
+                        <h3>밸런스 파트너</h3>
+                        <div class="style-code">RS 스타일</div>
+                        <div class="style-brand">Balance Partner</div>
+                    </div>
+                </div>
+                <div class="style-description">
+                    구성원의 성장을 지원하고 관계를 존중하면서도, 전략적 시각으로 미래를 준비합니다. 사람 중심의 리더십과 변화 대응력을 조화롭게 발휘합니다.
+                </div>
+                <div class="style-strengths">
+                    <h4>주요 강점</h4>
+                    <ul>
+                        <li>구성원 성장 지원</li>
+                        <li>지속 가능한 발전</li>
+                        <li>만족도와 성장 균형</li>
+                        <li>전략적 미래 준비</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- SE 스타일 -->
+            <div class="style-card">
+                <div class="style-header">
+                    <img src="png/10png.png" alt="SE 스타일" class="style-image">
+                    <div class="style-info">
+                        <h3>스트래티직 두어</h3>
+                        <div class="style-code">SE 스타일</div>
+                        <div class="style-brand">Strategic Doer</div>
+                    </div>
+                </div>
+                <div class="style-description">
+                    전략적 통찰을 바탕으로 조직의 방향을 제시하고, 실행력을 통해 이를 실현합니다. 변화하는 환경을 빠르게 반영하여 성과와 혁신을 동시에 창출합니다.
+                </div>
+                <div class="style-strengths">
+                    <h4>주요 강점</h4>
+                    <ul>
+                        <li>전략과 실행 연결</li>
+                        <li>현재 성과와 미래 성장</li>
+                        <li>빠른 환경 반영</li>
+                        <li>혁신적 성과 창출</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- SI 스타일 -->
+            <div class="style-card">
+                <div class="style-header">
+                    <img src="png/11.png" alt="SI 스타일" class="style-image">
+                    <div class="style-info">
+                        <h3>비전 셰이퍼</h3>
+                        <div class="style-code">SI 스타일</div>
+                        <div class="style-brand">Vision Shaper</div>
+                    </div>
+                </div>
+                <div class="style-description">
+                    트렌드와 변화를 인지하는 통찰력을 바탕으로 전략적 방향을 수립합니다. 동시에 영향력을 발휘하여 구성원들이 변화에 공감하고 적극적으로 동참하게 만듭니다.
+                </div>
+                <div class="style-strengths">
+                    <h4>주요 강점</h4>
+                    <ul>
+                        <li>변화 인지 통찰력</li>
+                        <li>혁신적 리더십</li>
+                        <li>변화를 기회로 전환</li>
+                        <li>전략과 설득 결합</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- SR 스타일 -->
+            <div class="style-card">
+                <div class="style-header">
+                    <img src="png/12.png" alt="SR 스타일" class="style-image">
+                    <div class="style-info">
+                        <h3>퓨처 커넥터</h3>
+                        <div class="style-code">SR 스타일</div>
+                        <div class="style-brand">Future Connector</div>
+                    </div>
+                </div>
+                <div class="style-description">
+                    관계를 중시하며 구성원의 성장을 지원하는 동시에, 전략적 시각으로 미래를 설계합니다. 변화에 능동적으로 대응하며 장기적 발전 방향을 제시합니다.
+                </div>
+                <div class="style-strengths">
+                    <h4>주요 강점</h4>
+                    <ul>
+                        <li>신뢰와 비전 연결</li>
+                        <li>안정과 혁신 동시 달성</li>
+                        <li>능동적 변화 대응</li>
+                        <li>장기적 발전 방향</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© 2025 리더십 스타일 분석 - 생산기술인재육성파트</p>
+        </div>
+    </div>
+</body>
+</html>
